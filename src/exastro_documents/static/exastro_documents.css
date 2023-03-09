@@ -6,9 +6,9 @@
 @font-face {
  font-family: 'exastro-ui-icons';
  src:
-  url('../fonts/exastro-ui-icons.ttf?t729c9') format('truetype'),
-  url('../fonts/exastro-ui-icons.woff?t729c9') format('woff'),
-  url('../fonts/exastro-ui-icons.svg?t729c9#exastro-ui-icons') format('svg');
+  url('./fonts/exastro-ui-icons.ttf?t729c9') format('truetype'),
+  url('./fonts/exastro-ui-icons.woff?t729c9') format('woff'),
+  url('./fonts/exastro-ui-icons.svg?t729c9#exastro-ui-icons') format('svg');
  font-weight: normal;
  font-style: normal;
  font-display: block;
@@ -920,6 +920,13 @@ span.highlighted {
 #sideMenu li.toctree-l2>a {
  padding: 8px 2em 8px 2em;
  border-top: 1px solid #222;
+ font-size: 1.1rem;
+ font-weight: bolder;
+ text-decoration: underline;
+}
+
+#sideMenu li.toctree-l2>ul {
+ margin-left: 6px;
 }
 
 #sideMenu li.toctree-l3>a {
@@ -1577,7 +1584,7 @@ span.highlighted {
 }
 
 #article table.filter-table span.icon-filter:before {
- content: "\e936";
+ content: "\e90d";
  display: inline-block;
  padding: 2px 2px;
 }
@@ -1603,7 +1610,7 @@ span.highlighted {
 }
 
 #article table.filter-table .icon-filter:before {
- content: "\e936";
+ content: "\e90c";
 }
 
 #article table.filter-table .ft-filter {
@@ -1630,6 +1637,10 @@ span.highlighted {
  background-color: #FFA500;
  color: #FFF;
  border-radius: 2px;
+}
+
+#article table.filter-table .ft-button.selected.icon-filter:before {
+ content: "\e90c";
 }
 
 #article table.filter-table .ft-list {
